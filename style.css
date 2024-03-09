@@ -1,0 +1,87 @@
+.{
+    margin: 0 ;
+    padding:0 ;
+    box-sizing: border-box;
+
+:root {
+    --primary-color: red
+
+}
+
+}
+body{
+    font-family: "open sans",sans-serif;
+    
+}
+nav{
+    display :flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+nav.active{
+    box-shadow: 0 2px 16px rgba(0, 0, 0.12);
+}
+
+nav > .logo {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+   cursor :pointer;
+   display :flex ;
+   align-items: center;
+
+   nav > .logo > svg{
+     margin-right: 0.3rem;
+     display: none;
+
+   }
+}
+nav >.logo svg {
+    cursor: pointer;
+
+}
+.logo-btn span {
+ margin: left 0.5rem; 
+ font-family: 600;
+
+}
+/* hero section*/
+section.hero {
+    padding: 01rem;
+    height: 500px;
+    border: 2px solid transparent;
+    position: relative;
+}
+.hero.bg-wrapper{
+    border: 2px solid black;
+    height: 200px;
+    position: absolute;
+
+}
+
+.hero > h3{
+    font-size: 2rem;
+    font-family: 300;
+    margin-top: 9rem;
+    min-width: 220px;
+    width: 705;
+
+
+}
+@media screen and (min-width:768px) {
+    nav > .logo >svg{
+    display: inline; 
+ }
+ @media screen and{min-width: 960px) {
+   nav > .profile-icon-medium {
+    display: none;
+   }
+
+
+   }
+ }
+    
+ }
+
